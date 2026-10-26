@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#EDF1F3"/>
+  <rect x="120" y="150" width="960" height="500" rx="28" fill="#0B4F6C"/>
+  <rect x="160" y="195" width="880" height="90" rx="14" fill="#083A4F"/>
+  <circle cx="215" cy="240" r="12" fill="#F2B33D"/><circle cx="255" cy="240" r="12" fill="#5FA3B8"/><circle cx="295" cy="240" r="12" fill="#F7F4EC"/>
+  <g fill="#F7F4EC" font-family="Segoe UI,Arial" text-anchor="middle">
+    <text x="600" y="270" font-size="34" font-weight="700">PANEL KENDALI MOTOR</text>
+    <text x="600" y="600" font-size="26" opacity=".8">Praktikum DOL &amp; Star-Delta</text>
+  </g>
+  <g stroke="#F2B33D" stroke-width="6" fill="none">
+    <circle cx="330" cy="430" r="55"/><circle cx="530" cy="430" r="55"/><circle cx="730" cy="430" r="55"/>
+    <path d="M385 430h90M585 430h90"/>
+  </g>
+  <g fill="#5FA3B8"><circle cx="900" cy="390" r="20"/><circle cx="900" cy="470" r="20"/></g>
+</svg>

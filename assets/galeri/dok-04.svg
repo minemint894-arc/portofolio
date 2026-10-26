@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#EDF1F3"/>
+  <g fill="#0B4F6C">
+    <circle cx="330" cy="300" r="70"/><circle cx="600" cy="260" r="70"/><circle cx="870" cy="300" r="70"/>
+    <path d="M220 560c0-90 50-160 110-160s110 70 110 160Z"/>
+    <path d="M490 560c0-90 50-160 110-160s110 70 110 160Z"/>
+    <path d="M760 560c0-90 50-160 110-160s110 70 110 160Z"/>
+  </g>
+  <g fill="#F2B33D">
+    <circle cx="330" cy="300" r="26"/><circle cx="600" cy="260" r="26"/><circle cx="870" cy="300" r="26"/>
+  </g>
+  <path d="M280 520h640" stroke="#5FA3B8" stroke-width="10" stroke-linecap="round"/>
+  <text x="600" y="700" fill="#0B4F6C" font-family="Segoe UI,Arial" font-size="30" text-anchor="middle">Diskusi &amp; Kerja Kelompok</text>
+</svg>

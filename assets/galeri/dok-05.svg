@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#10222D"/>
+  <g stroke="#5FA3B8" stroke-width="6" fill="none" opacity=".5">
+    <path d="M0 140h260l60 60h200M1200 660H940l-60-60H680M120 700V520l60-60V300"/>
+  </g>
+  <path d="M600 130 380 220v150c0 130 90 220 220 280 130-60 220-150 220-280V220Z" fill="#F7F4EC"/>
+  <path d="M600 190 430 258v112c0 100 66 172 170 222 104-50 170-122 170-222V258Z" fill="#F2B33D"/>
+  <path d="M520 400l55 55 115-125" stroke="#0B4F6C" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="610" fill="#F7F4EC" font-family="Segoe UI,Arial" font-size="30" text-anchor="middle">Penerapan K3 &amp; LOTO</text>
+</svg>
