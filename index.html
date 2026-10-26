@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Portfolio PPG | Abdul Fitrah Mine — Teknik Kelistrikan</title>
+<meta name="description" content="E-Portfolio Seminar PPG Abdul Fitrah Mine, bidang studi Teknik Kelistrikan. Perjalanan belajar, karya inovasi EduKelistrikan, refleksi, dan dokumentasi.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= LOADER ================= -->
+<div class="loader" id="loader">
+  <div class="loader-book">
+    <i class="fa-solid fa-bolt"></i>
+  </div>
+  <p>Menyiapkan portfolio<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+</div>
+
+<!-- ================= PROGRESS BAR ================= -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ================= MOBILE OVERLAY ================= -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- ================= TOP NAVBAR ================= -->
+<nav class="topbar" id="sidebar">
+  <div class="topbar-brand">
+    <div class="brand-mark"><img src="assets/logo/logo-bolt.svg" alt="Logo kelistrikan"></div>
+    <div class="brand-text">
+      <span class="brand-title">E-Portfolio</span>
+      <span class="brand-sub">Abdul Fitrah Mine</span>
+    </div>
+  </div>
+
+  <div class="topbar-nav">
+    <a href="#beranda" class="nav-link active" data-section="beranda">
+      <i class="fa-solid fa-house"></i><span>Beranda</span>
+    </a>
+    <a href="#profil" class="nav-link" data-section="profil">
+      <i class="fa-solid fa-user"></i><span>Profil</span>
+    </a>
+    <div class="nav-dropdown">
+      <a href="#rancangan" class="nav-link dropdown-toggle" data-section="rancangan,pengalaman-s1,pengalaman-s2">
+        <i class="fa-solid fa-route"></i><span>Learning Journey</span><i class="fa-solid fa-chevron-down nav-caret"></i>
+      </a>
+      <div class="nav-submenu">
+        <a href="#pengalaman-s1" class="nav-link sub-link" data-section="pengalaman-s1"><span>Pengalaman Belajar SEM 1</span></a>
+        <a href="#pengalaman-s2" class="nav-link sub-link" data-section="pengalaman-s2"><span>Pengalaman Belajar SEM 2</span></a>
+      </div>
+    </div>
+    <a href="#karya-inovatif" class="nav-link" data-section="karya-inovatif">
+      <i class="fa-solid fa-lightbulb"></i><span>Karya Inovasi</span>
+    </a>
+    <div class="nav-dropdown">
+      <a href="#refleksi" class="nav-link dropdown-toggle" data-section="refleksi,refleksi-s1,refleksi-s2">
+        <i class="fa-solid fa-book"></i><span>Refleksi PPG</span><i class="fa-solid fa-chevron-down nav-caret"></i>
+      </a>
+      <div class="nav-submenu">
+        <a href="#refleksi-s1" class="nav-link sub-link" data-section="refleksi-s1"><span>Refleksi Semester 1</span></a>
+        <a href="#refleksi-s2" class="nav-link sub-link" data-section="refleksi-s2"><span>Refleksi Semester 2</span></a>
+        <a href="#refleksi" class="nav-link sub-link" data-section="refleksi"><span>Refleksi Kegiatan PPG</span></a>
+      </div>
+    </div>
+    <a href="#dokumentasi" class="nav-link" data-section="dokumentasi">
+      <i class="fa-solid fa-images"></i><span>Dokumentasi</span>
+    </a>
+  </div>
+
+  <button class="topbar-toggle" id="topbarToggle" aria-label="Menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <div class="topbar-actions">
+    <button class="theme-toggle" id="themeToggle" title="Mode Gelap">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <div class="header-photo">
+      <img src="assets/dokumen/foto-profil.svg" alt="Foto Abdul Fitrah Mine">
+    </div>
+  </div>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<div class="main-wrapper" id="mainWrapper">
+
+  <main class="content">
+
+    <!-- ============ BERANDA ============ -->
+    <section id="beranda" class="page section hero-screensaver page-active">
+      <div class="ss-background" id="ssBackground"></div>
+      <div class="ss-overlay"></div>
+      <div class="hero-screensaver-inner" data-aos="zoom-in">
+        <div class="hero-icon-badge">
+          <img src="assets/logo/logo-bolt.svg" alt="Logo kelistrikan">
+        </div>
+        <h1 class="hero-screensaver-title">E-PORTOFOLIO SEMINAR PENDIDIKAN PROFESI GURU</h1>
+        <div class="hero-divider">
+          <span class="divider-line"></span>
+          <span class="divider-icon"><i class="fa-solid fa-bolt"></i></span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="hero-screensaver-name">Abdul Fitrah Mine</p>
+        <p class="hero-screensaver-nim">NIM. 2590494950021</p>
+        <p class="hero-screensaver-sub">Bidang Studi Teknik Kelistrikan &middot; Universitas Negeri Surabaya</p>
+      </div>
+    </section>
+
+    <!-- ============ PROFIL ============ -->
+    <section id="profil" class="page section">
+      <div class="page-banner gradient" data-aos="fade-up">
+        <h1>Profil Guru</h1>
+        <p>Mengenal lebih dekat tentang diri saya sebagai calon guru Teknik Kelistrikan.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="card profil-card">
+          <div class="profil-photo" data-aos="zoom-in">
+            <img src="assets/dokumen/foto-profil.svg" alt="Foto Abdul Fitrah Mine">
+          </div>
+          <div class="profil-detail" data-aos="fade-left">
+            <dl class="detail-list">
+              <div class="detail-row"><dt><i class="fa-solid fa-id-badge"></i> Nama</dt><dd>Abdul Fitrah Mine</dd></div>
+              <div class="detail-row"><dt><i class="fa-solid fa-hashtag"></i> NIM</dt><dd>2590494950021</dd></div>
+              <div class="detail-row"><dt><i class="fa-solid fa-bolt"></i> Bidang Studi</dt><dd>Teknik Kelistrikan</dd></div>
+              <div class="detail-row"><dt><i class="fa-solid fa-building-columns"></i> Universitas</dt><dd>Universitas Negeri Surabaya</dd></div>
+              <div class="detail-row"><dt><i class="fa-solid fa-calendar-days"></i> Angkatan</dt><dd>2026</dd></div>
+              <div class="detail-row"><dt><i class="fa-solid fa-school"></i> Sekolah Mitra</dt><dd>SMK Negeri 5 Surabaya</dd></div>
+              <div class="detail-row"><dt><i class="fa-solid fa-user-tie"></i> Dosen Pembimbing</dt><dd>Dr. Dosen Pembimbing, M.Pd.</dd></div>
+              <div class="detail-row"><dt><i class="fa-solid fa-chalkboard-user"></i> Guru Pamong</dt><dd>Guru Pamong, S.Pd.</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+          <h3 class="block-title"><i class="fa-solid fa-user-graduate"></i> Tentang Saya</h3>
+          <p class="block-text" style="text-align:justify">Saya Abdul Fitrah Mine, seorang calon guru Teknik Kelistrikan yang percaya bahwa belajar paling bermakna terjadi ketika murid berkesempatan mencoba, mengukur, dan menemukan jawaban atas rasa ingin tahunya sendiri. Ketertarikan saya pada kelistrikan tumbuh dari kebiasaan membongkar rangkaian sederhana, mengamati cara kerja komponen, dan memahami mengapa sebuah sistem dapat bekerja dengan aman.</p>
+          <p class="block-text" style="text-align:justify;margin-top:16px;">Melalui PPG, saya belajar bahwa kompetensi teknis harus berjalan bersama empati, keselamatan kerja, dan kemampuan memahami kebutuhan belajar murid. Saya ingin menjadi guru yang mampu menghubungkan teori rangkaian dengan praktik nyata di bengkel, sekaligus membangun budaya kerja yang disiplin, teliti, dan peduli keselamatan.</p>
+          <blockquote class="quote-card">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Rangkaian yang baik bukan hanya yang mampu mengalirkan arus, tetapi juga yang aman, terukur, dan bermanfaat.</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <h3 class="block-title"><i class="fa-solid fa-id-card"></i> Identifikasi Diri</h3>
+        <div class="analysis-grid">
+          <div class="analysis-item">
+            <h4><i class="fa-solid fa-flag"></i> Visi Pendidikan Indonesia</h4>
+            <p style="text-align:justify">Mewujudkan pendidikan vokasi yang merata, bermutu, dan relevan dengan dunia kerja. Setiap murid berhak memperoleh pengalaman belajar yang aman, kontekstual, dan mampu menumbuhkan kompetensi serta karakter yang dibutuhkan untuk masa depannya.</p>
+          </div>
+          <div class="analysis-item">
+            <h4><i class="fa-solid fa-eye"></i> Visi Menjadi Guru</h4>
+            <p style="text-align:justify">Menjadi guru kelistrikan yang menumbuhkan rasa ingin tahu, ketelitian, dan kesadaran K3. Saya ingin menghadirkan kelas yang membuat murid berani bertanya, mencoba, melakukan kesalahan secara aman, lalu belajar memperbaikinya melalui refleksi.</p>
+          </div>
+          <div class="analysis-item">
+            <h4><i class="fa-solid fa-bullseye"></i> Strategi Pencapaian Visi</h4>
+            <ol class="misi-list">
+              <li><strong>Pembelajaran Berpusat pada Murid</strong> — Memetakan kesiapan dan gaya belajar murid sebagai dasar diferensiasi aktivitas teori dan praktik.</li>
+              <li><strong>Pembelajaran Kontekstual Berbasis Industri</strong> — Menghubungkan materi dengan panel, motor listrik, alat ukur, dan prosedur kerja yang digunakan di dunia industri.</li>
+            </ol>
+            <button class="btn btn-primary mgj-toggle" data-target="spvMore" type="button" style="margin-top:14px;"><i class="fa-solid fa-chevron-down"></i> Baca Selanjutnya</button>
+            <div id="spvMore" class="mgj-more" style="display:none;">
+              <ol class="misi-list" start="3">
+                <li><strong>Penguatan K3 dan Budaya Kerja</strong> — Membiasakan identifikasi bahaya, LOTO, penggunaan APD, serta prosedur pengukuran yang aman pada setiap kegiatan.</li>
+                <li><strong>Pemanfaatan Media Digital</strong> — Mengembangkan bengkel virtual dan simulasi interaktif untuk memperluas akses murid terhadap alat serta praktik yang terbatas di sekolah.</li>
+                <li><strong>Refleksi dan Kolaborasi</strong> — Memanfaatkan umpan balik guru pamong, rekan sejawat, dan murid untuk memperbaiki kualitas pembelajaran secara berkelanjutan.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEARNING JOURNEY ============ -->
+    <section id="rancangan" class="page section">
+      <div class="page-banner gradient" data-aos="fade-up">
+        <h1>Learning Journey</h1>
+        <p>Timeline perjalanan belajar dan refleksi mendalam selama mengikuti PPG.</p>
+      </div>
+
+      <div class="card" data-aos="fade-up" style="margin-bottom:26px;">
+        <h3 class="block-title"><i class="fa-solid fa-route"></i> Pengalaman Belajar</h3>
+        <p class="block-text" style="text-align:justify">Perjalanan saya sebagai mahasiswa PPG Calon Guru adalah proses belajar yang terus bergerak: memahami pendidikan, mengenal murid, mencoba merancang pembelajaran, lalu memperbaiki diri berdasarkan pengalaman nyata di kelas dan bengkel. Setiap tahap membentuk cara pandang saya tentang menjadi guru kelistrikan yang tidak hanya kompeten, tetapi juga reflektif.</p>
+
+        <h4 class="lej-trans-title"><i class="fa-solid fa-arrows-spin"></i> PERUBAHAN DALAM DIRI SAYA</h4>
+        <ol class="trans-flow">
+          <li><strong>Memahami</strong><span>Memahami hakikat pendidikan dan nilai yang harus dibangun.</span></li>
+          <li><strong>Mengenal</strong><span>Memahami karakteristik, kebutuhan, dan potensi peserta didik.</span></li>
+          <li><strong>Memahami Masalah</strong><span>Belajar melihat kebutuhan dan menemukan solusi melalui Design Thinking.</span></li>
+          <li><strong>Merancang</strong><span>Menciptakan pembelajaran yang mendalam, aman, dan sesuai kebutuhan murid.</span></li>
+          <li><strong>Menerapkan</strong><span>Membawa pengetahuan dan rancangan ke dalam praktik melalui PPL.</span></li>
+          <li><strong>Bertumbuh</strong><span>Belajar dari tantangan, kesalahan, pengalaman, dan umpan balik.</span></li>
+          <li class="trans-final"><strong>Menjadi</strong><span>Terus berkembang menjadi guru yang reflektif, empatik, adaptif, dan berpusat pada murid.</span></li>
+        </ol>
+
+        <h4 class="lej-trans-title"><i class="fa-solid fa-rotate"></i> Refleksi Akhir</h4>
+        <p class="block-text" style="text-align:justify">Setiap mata kuliah dalam PPG saling terhubung. Filosofi Pendidikan membantu saya memahami alasan saya menjadi guru. Pemahaman Peserta Didik mengajarkan siapa yang saya ajar. Design Thinking dan pembelajaran mendalam membimbing saya merancang pengalaman belajar yang bermakna. PPL memberi ruang untuk menerapkan semuanya di kelas dan bengkel, sementara pola pikir bertumbuh mengingatkan saya untuk tidak berhenti belajar.</p>
+        <p class="block-text" style="text-align:justify;margin-top:12px;">Sebagai calon guru Teknik Kelistrikan, saya ingin menghadirkan pembelajaran yang menumbuhkan kompetensi teknis, keselamatan kerja, kolaborasi, dan kemandirian. Guru bukan hanya penyampai materi, tetapi pembelajar sepanjang hayat yang terus memahami murid dan memperbaiki cara mengajarnya.</p>
+        <p class="block-text" style="text-align:justify;margin-top:12px;font-weight:600;color:var(--primary-dark);">Perjalanan ini belum selesai.</p>
+      </div>
+    </section>
+
+    <!-- ============ PENGALAMAN SEM 1 ============ -->
+    <section id="pengalaman-s1" class="page section">
+      <div class="page-banner gradient-ctg" data-aos="fade-up">
+        <h1>Pengalaman Belajar SEM 1</h1>
+        <p>Refleksi atas perjalanan belajar pada semester pertama PPG.</p>
+      </div>
+
+      <div class="card" data-aos="fade-up" style="margin-bottom:26px;">
+        <h4 class="lej-trans-title"><i class="fa-solid fa-arrows-spin"></i> My Growth Journey</h4>
+        <h4 class="block-title lej-phase-title"><i class="fa-solid fa-seedling"></i> Perjalanan Transformasi dan Perkembangan Diri Selama Semester 1</h4>
+        <p class="block-text" style="text-align:justify">Semester pertama PPG banyak mengubah cara saya memandang murid. Mata kuliah <strong>Pemahaman Peserta Didik</strong> membuat saya menyadari bahwa kelas kelistrikan tidak diisi oleh murid yang sama. Ada yang cepat memahami diagram rangkaian, ada yang lebih mudah belajar melalui praktik langsung, dan ada yang perlu pendampingan bertahap. Saya belajar bahwa perbedaan tersebut bukan hambatan, melainkan dasar untuk merancang pembelajaran yang lebih adil.</p>
+        <p class="block-text" style="text-align:justify;margin-top:12px;">Melalui PPL Terbimbing, saya melihat bahwa motivasi murid sangat dipengaruhi oleh rasa aman dan keberanian mencoba. Ketika murid takut salah saat merangkai atau mengukur, mereka cenderung diam dan menunggu instruksi. Saya mulai belajar membangun suasana yang mendorong eksplorasi, memberi umpan balik yang spesifik, dan menempatkan keselamatan sebagai bagian dari proses belajar.</p>
+        <blockquote class="quote-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Setiap murid memiliki jalur belajarnya sendiri. Tugas guru adalah memastikan tidak ada yang berhenti di tengah jalan.</p>
+        </blockquote>
+        <button class="btn btn-primary mgj-toggle" data-target="mgjS1Next" type="button" style="margin-top:18px;"><i class="fa-solid fa-chevron-down"></i> Baca Selanjutnya</button>
+
+        <div id="mgjS1Next" style="display:none;">
+          <p class="block-text" style="text-align:justify;margin-top:16px;">Pengalaman paling berharga justru muncul ketika rencana pembelajaran tidak berjalan sesuai perkiraan. Saya belajar menyederhanakan instruksi, menggunakan demonstrasi bertahap, dan menyediakan alat bantu visual agar murid lebih mudah memahami langkah kerja. Saya juga mulai membiasakan refleksi singkat setelah praktik: apa yang berhasil, apa yang membahayakan, dan apa yang akan diperbaiki pada pertemuan berikutnya.</p>
+          <p class="block-text" style="text-align:justify;margin-top:12px;">Dari semester ini saya memahami bahwa pembelajaran yang baik bukan hanya ketika materi selesai disampaikan, tetapi ketika murid merasa dilihat, didampingi, dan memiliki kesempatan untuk berkembang sesuai kebutuhannya.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PENGALAMAN SEM 2 ============ -->
+    <section id="pengalaman-s2" class="page section">
+      <div class="page-banner gradient-sage" data-aos="fade-up">
+        <h1>Pengalaman Belajar SEM 2</h1>
+        <p>Refleksi atas perjalanan belajar pada semester kedua PPG.</p>
+      </div>
+
+      <div class="card" data-aos="fade-up" style="margin-bottom:26px;">
+        <h4 class="lej-trans-title"><i class="fa-solid fa-arrows-spin"></i> My Growth Journey</h4>
+        <h4 class="block-title lej-phase-title"><i class="fa-solid fa-seedling"></i> Perjalanan Transformasi dan Perkembangan Diri Selama Semester 2</h4>
+        <p class="block-text" style="text-align:justify">Pada semester kedua, <strong>Pembelajaran Sosial Emosional (PSE)</strong> menjadi bekal penting saat saya menjalani PPL Mandiri. Saya bertemu murid dengan kesiapan belajar, kepercayaan diri, dan pengalaman praktik yang beragam. Ada murid yang sangat antusias mencoba rangkaian, tetapi ada juga yang menarik diri karena takut melakukan kesalahan atau merasa kurang mampu.</p>
+        <p class="block-text" style="text-align:justify;margin-top:12px;">Pengalaman itu mengubah cara saya mengelola kelas. Saya belajar mengenali emosi diri ketika pembelajaran tidak berjalan sesuai rencana, menahan diri untuk tidak cepat memberi label, dan mencoba memahami kebutuhan di balik perilaku murid. Saya juga membiasakan pembukaan kelas yang tenang, kesepakatan kerja, dan apresiasi terhadap proses, bukan hanya hasil akhir.</p>
+        <blockquote class="quote-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Menjadi guru bukan hanya tentang memahami apa yang diajarkan, tetapi juga memahami siapa yang sedang belajar.</p>
+        </blockquote>
+        <button class="btn btn-primary mgj-toggle" data-target="mgjMore2" type="button" style="margin-top:18px;"><i class="fa-solid fa-chevron-down"></i> Baca Selanjutnya</button>
+
+        <div id="mgjMore2" class="mgj-more" style="display:none;">
+          <p class="block-text" style="text-align:justify;margin-top:16px;">Melalui pengalaman langsung di bengkel, saya semakin memahami lima kompetensi CASEL: kesadaran diri, manajemen diri, kesadaran sosial, keterampilan berelasi, dan pengambilan keputusan yang bertanggung jawab. Saya belajar bahwa keselamatan kerja bukan sekadar aturan, tetapi juga bentuk kepedulian terhadap diri dan orang lain.</p>
+          <p class="block-text" style="text-align:justify;margin-top:12px;">PPL Mandiri memberi ruang untuk mengalami, merefleksikan, dan mencoba lagi. Saya menyadari bahwa guru profesional tidak selalu memiliki semua jawaban, tetapi memiliki kemauan untuk belajar dari pengalaman. Ke depan, saya ingin terus membangun kelas yang aman, inklusif, dan menumbuhkan keberanian murid untuk mencoba.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KARYA INOVASI ============ -->
+    <section id="karya-inovatif" class="page section">
+      <div class="page-banner gradient-ctg" data-aos="fade-up">
+        <h1>Karya Inovasi</h1>
+        <p>Media pembelajaran interaktif yang dikembangkan untuk mendukung pembelajaran Teknik Kelistrikan.</p>
+      </div>
+
+      <div class="ki">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow-note">desain karya inovatif</span>
+          <h2><i class="fa-solid fa-id-card"></i> Identitas Karya Inovasi</h2>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+          <dl class="detail-list">
+            <div class="detail-row"><dt><i class="fa-solid fa-cube"></i> Nama Karya</dt><dd>EduKelistrikan — Bengkel Virtual Teknik Instalasi Tenaga Listrik</dd></div>
+            <div class="detail-row"><dt><i class="fa-solid fa-circle-info"></i> Deskripsi Karya</dt><dd>Media pembelajaran interaktif berbasis web dengan visualisasi 3D peralatan, simulasi praktikum kendali motor, serta asesmen untuk mendukung pembelajaran kelistrikan di SMK.</dd></div>
+            <div class="detail-row"><dt><i class="fa-solid fa-bullseye"></i> Sasaran</dt><dd>Guru produktif TITL dan peserta didik Fase E–F pada bidang keahlian Teknik Kelistrikan.</dd></div>
+            <div class="detail-row"><dt><i class="fa-solid fa-book-open"></i> Mata Kuliah yang Melatarbelakangi</dt><dd>Pemahaman Peserta Didik, Pembelajaran Mendalam dan Asesmen (PMA), Design Thinking.</dd></div>
+            <div class="detail-row"><dt><i class="fa-solid fa-link"></i> Tautan Karya</dt><dd><a class="ki-link" href="https://edukelistrikan.vercel.app" target="_blank" rel="noopener">https://edukelistrikan.vercel.app</a></dd></div>
+          </dl>
+
+          <div class="stats-row">
+            <div class="stat-card"><span class="ki-stat">15</span><span class="stat-label">Model peralatan kelistrikan 3D</span></div>
+            <div class="stat-card"><span class="ki-stat">3</span><span class="stat-label">Praktikum kendali motor</span></div>
+            <div class="stat-card"><span class="ki-stat">K3</span><span class="stat-label">Simulasi LOTO dan prosedur aman</span></div>
+            <div class="stat-card"><span class="ki-stat">Fase E–F</span><span class="stat-label">Kelas X–XII TITL</span></div>
+          </div>
+
+          <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a class="btn btn-primary" href="https://edukelistrikan.vercel.app" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Buka EduKelistrikan</a>
+            <a class="btn btn-outline" href="#alur-aplikasi" data-scroll="alur-aplikasi"><i class="fa-solid fa-diagram-project"></i> Lihat Alur Penggunaan</a>
+          </div>
+        </div>
+
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow-note">penjelasan karya</span>
+          <h2><i class="fa-solid fa-file-lines"></i> Penjelasan Karya Inovasi</h2>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+          <h4 class="block-title"><i class="fa-solid fa-magnifying-glass-chart"></i> 2. Identifikasi Kebutuhan dan Tantangan</h4>
+          <p>Pembelajaran Teknik Kelistrikan menuntut pemahaman konsep yang kuat sekaligus keterampilan praktik yang aman. Namun, tidak semua sekolah memiliki jumlah alat, panel, dan komponen yang memadai untuk setiap murid. Beberapa peralatan juga memiliki risiko tinggi apabila digunakan tanpa pemahaman prosedur yang benar.</p>
+          <p>Berdasarkan pengamatan selama PPL, murid sering mengalami kesulitan membayangkan cara kerja rangkaian kendali motor, membaca simbol komponen, dan memahami urutan kerja panel. Penjelasan lisan dan gambar dua dimensi belum selalu cukup untuk membangun gambaran yang utuh. Di sisi lain, waktu praktik terbatas dan kesempatan mencoba ulang tidak selalu tersedia.</p>
+          <p>Kondisi tersebut melatarbelakangi pengembangan EduKelistrikan, sebuah bengkel virtual yang menghadirkan peralatan kelistrikan dalam bentuk 3D, simulasi praktikum, serta materi K3 dan LOTO. Media ini dirancang sebagai pendamping praktik nyata, bukan pengganti pengalaman menggunakan alat sesungguhnya.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+          <h4 class="block-title"><i class="fa-solid fa-lightbulb"></i> 3. Gagasan dan Tujuan Inovasi</h4>
+          <h5 class="ki-sub">A. Gagasan Kreatif</h5>
+          <p>EduKelistrikan menggabungkan eksplorasi alat 3D, simulasi rangkaian kendali motor, asesmen, dan refleksi dalam satu platform berbasis web. Murid dapat mengenal bentuk serta fungsi alat, mencoba prosedur praktikum secara virtual, lalu menguji pemahamannya melalui kuis.</p>
+          <p>Media ini juga menyediakan alur K3/LOTO agar murid membiasakan diri bekerja dengan aman sebelum memasuki bengkel nyata. Bagi guru, tersedia dashboard sederhana untuk memantau aktivitas dan hasil belajar murid.</p>
+          <h5 class="ki-sub">B. Rumusan Tujuan</h5>
+          <ol>
+            <li>Membantu murid mengenali peralatan kelistrikan dan simbol komponen melalui visualisasi 3D.</li>
+            <li>Memfasilitasi latihan rangkaian kendali motor secara aman dan berulang.</li>
+            <li>Menumbuhkan kesadaran K3, LOTO, dan prosedur pengukuran yang benar.</li>
+            <li>Menyediakan asesmen dan refleksi untuk memantau pemahaman murid.</li>
+            <li>Membantu guru menghadirkan pembelajaran yang lebih kontekstual dan efisien.</li>
+          </ol>
+        </div>
+
+        <button class="btn btn-primary mgj-toggle" data-target="kiMore" type="button" style="margin-bottom:26px;"><i class="fa-solid fa-chevron-down"></i> Baca Lebih Lengkap</button>
+
+        <div id="kiMore" class="mgj-more" style="display:none;">
+          <div class="card">
+            <h4 class="block-title"><i class="fa-solid fa-gem"></i> 4. Prinsip Karya Inovasi</h4>
+            <div class="analysis-grid" style="grid-template-columns:1fr;margin-top:12px;">
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-star"></i> 1. Kebaruan (Novelty)</h4>
+                <p>EduKelistrikan memadukan bengkel virtual 3D, simulasi praktikum kendali motor, K3/LOTO, asesmen, dan refleksi dalam satu media. Pendekatan ini memberikan pengalaman eksplorasi yang lebih utuh dibandingkan gambar atau video pembelajaran yang bersifat satu arah.</p>
+              </div>
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-palette"></i> 2. Kreativitas (Creativity)</h4>
+                <p>Alat kelistrikan divisualisasikan dalam bentuk 3D yang dapat dijelajahi, sementara praktikum DOL dan star-delta disusun sebagai alur kerja bertahap. Unsur permainan, kuis, dan refleksi membuat proses belajar lebih aktif tanpa mengurangi ketepatan materi.</p>
+              </div>
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-link"></i> 3. Relevansi (Relevance)</h4>
+                <p>Materi disesuaikan dengan kebutuhan pembelajaran TITL, khususnya pengenalan alat, rangkaian kendali motor, pengukuran, dan keselamatan kerja. Media ini relevan dengan kompetensi yang dibutuhkan di dunia industri serta dapat digunakan pada Fase E dan F.</p>
+              </div>
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-hand-holding-heart"></i> 4. Kebermanfaatan (Usefulness)</h4>
+                <p>Murid dapat belajar tanpa bergantung pada ketersediaan alat dan memiliki kesempatan mencoba ulang secara aman. Guru memperoleh media pendukung untuk demonstrasi, penugasan, dan asesmen. Sekolah dapat memperluas akses praktikum tanpa menambah risiko keselamatan.</p>
+              </div>
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-chart-line"></i> 5. Keefektifan (Effectiveness)</h4>
+                <p>Uji coba awal menunjukkan murid lebih antusias mengeksplorasi alat dan memahami urutan kerja rangkaian. Namun, media ini masih memerlukan pengujian yang lebih terukur, perbaikan akurasi beberapa model, serta pendampingan guru agar benar-benar meningkatkan pemahaman dan keterampilan.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 class="block-title"><i class="fa-solid fa-flask"></i> 5. Riset dan Pengembangan Solusi</h4>
+            <h5 class="ki-sub">A. Hasil Riset Sederhana</h5>
+            <p>Pengembangan EduKelistrikan berangkat dari kebutuhan nyata di bengkel: keterbatasan alat, waktu praktik, dan keberagaman kesiapan murid. Observasi serta diskusi dengan guru pamong menunjukkan bahwa murid membutuhkan pengalaman visual dan kesempatan berlatih sebelum menggunakan panel yang sebenarnya.</p>
+            <p>Penggunaan media 3D memungkinkan murid mengamati bentuk alat, posisi terminal, dan alur rangkaian secara lebih konkret. Simulasi membantu mengurangi rasa takut salah, sementara K3/LOTO menanamkan kebiasaan aman sejak awal. Evaluasi awal menunjukkan respons positif, tetapi efektivitas terhadap hasil belajar masih perlu diukur secara lebih sistematis.</p>
+            <h5 class="ki-sub">B. Rancangan atau Prototipe</h5>
+            <ol>
+              <li><strong>Pustaka alat 3D:</strong> 15 model peralatan kelistrikan yang dapat diputar dan diamati.</li>
+              <li><strong>Simulasi praktikum:</strong> rangkaian DOL, star-delta, dan pengukuran dasar dengan alur kerja bertahap.</li>
+              <li><strong>Modul K3 dan LOTO:</strong> prosedur keselamatan, identifikasi bahaya, dan langkah penguncian energi.</li>
+              <li><strong>Asesmen dan refleksi:</strong> kuis pemahaman serta ruang refleksi setelah kegiatan.</li>
+              <li><strong>Dashboard guru:</strong> ringkasan aktivitas dan hasil belajar untuk menentukan tindak lanjut.</li>
+            </ol>
+            <p>Alur penggunaan dimulai dari pengenalan tujuan, eksplorasi alat, simulasi, asesmen, lalu refleksi. Guru mendampingi diskusi agar murid tidak hanya mengeklik, tetapi mampu menjelaskan prinsip kerja dan alasan di balik setiap langkah. Panduan lengkapnya dijelaskan pada bagian 7.</p>
+          </div>
+
+          <div class="card">
+            <h4 class="block-title"><i class="fa-solid fa-diagram-project"></i> 6. Keterkaitan dengan Mata Kuliah</h4>
+            <h5 class="ki-sub">A. Pemahaman Peserta Didik</h5>
+            <p>Media ini dirancang dengan mempertimbangkan perbedaan kesiapan, gaya belajar, dan kecepatan memahami materi. Visualisasi 3D dan simulasi memberi alternatif bagi murid yang membutuhkan gambaran konkret, sementara alur bertahap membantu murid yang memerlukan pendampingan.</p>
+            <h5 class="ki-sub">B. Pembelajaran Mendalam dan Asesmen</h5>
+            <p>EduKelistrikan mendukung pembelajaran bermakna melalui eksplorasi, penerapan, dan refleksi. Kuis serta dashboard guru digunakan untuk memperoleh informasi tentang pemahaman murid, bukan sekadar memberi nilai akhir. Hasil asesmen menjadi dasar untuk penguatan atau pendampingan lanjutan.</p>
+            <h5 class="ki-sub">C. Design Thinking</h5>
+            <p>Pengembangan media mengikuti alur empati, definisi masalah, ide, prototipe, dan uji coba. Masukan dari murid dan guru pamong digunakan untuk memperbaiki tampilan, alur, serta akurasi simulasi.</p>
+          </div>
+        </div>
+
+          <div class="card" id="alur-aplikasi">
+            <h4 class="block-title"><i class="fa-solid fa-diagram-project"></i> 7. Alur dan Tata Cara Penggunaan Aplikasi</h4>
+            <p>EduKelistrikan dapat digunakan secara mandiri oleh murid maupun bersama guru di kelas. Alur berikut menggambarkan perjalanan pengguna dari membuka aplikasi hingga memperoleh umpan balik pembelajaran.</p>
+
+            <h5 class="ki-sub">A. Alur Penggunaan Aplikasi</h5>
+            <div class="flowchart" aria-label="Flowchart alur penggunaan EduKelistrikan">
+              <div class="flow-node flow-start">
+                <span class="flow-num"><i class="fa-solid fa-play"></i></span>
+                <div class="flow-body">
+                  <h5>Mulai</h5>
+                  <p>Buka <a class="ki-link" href="https://edukelistrikan.vercel.app" target="_blank" rel="noopener">edukelistrikan.vercel.app</a> melalui browser di laptop, tablet, atau ponsel.</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flow-node">
+                <span class="flow-num">1</span>
+                <div class="flow-body">
+                  <h5><i class="fa-solid fa-right-to-bracket"></i> Pilih Peran dan Masuk</h5>
+                  <p>Masuk sebagai <strong>guru</strong> atau <strong>siswa</strong> menggunakan akun yang telah diberikan. Jangan membagikan kata sandi.</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flow-node">
+                <span class="flow-num">2</span>
+                <div class="flow-body">
+                  <h5><i class="fa-solid fa-layer-group"></i> Pilih Modul Pembelajaran</h5>
+                  <p>Pilih kelas, fase, dan topik yang sesuai, misalnya pengenalan alat, rangkaian kendali motor, atau K3 dan LOTO.</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flow-node">
+                <span class="flow-num">3</span>
+                <div class="flow-body">
+                  <h5><i class="fa-solid fa-shield-halved"></i> Pahami Tujuan dan Prosedur K3</h5>
+                  <p>Baca tujuan pembelajaran serta langkah keselamatan sebelum menggunakan alat atau menjalankan simulasi.</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flow-node">
+                <span class="flow-num">4</span>
+                <div class="flow-body">
+                  <h5><i class="fa-solid fa-cube"></i> Eksplorasi Alat 3D</h5>
+                  <p>Amati bentuk alat, putar model, lalu pelajari nama, fungsi, dan bagian penting dari setiap peralatan.</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flow-node">
+                <span class="flow-num">5</span>
+                <div class="flow-body">
+                  <h5><i class="fa-solid fa-toggle-on"></i> Jalankan Simulasi Praktikum</h5>
+                  <p>Ikuti langkah kerja rangkaian DOL atau star-delta secara berurutan. Catat hasil pengamatan dan alasan di balik setiap tindakan.</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flow-node">
+                <span class="flow-num">6</span>
+                <div class="flow-body">
+                  <h5><i class="fa-solid fa-clipboard-check"></i> Kerjakan Kuis dan Refleksi</h5>
+                  <p>Uji pemahaman melalui kuis, lalu tuliskan refleksi tentang apa yang dipelajari, kesulitan, dan rencana perbaikan.</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flow-decision">
+                <i class="fa-solid fa-code-branch"></i>
+                <span>Sudah tuntas?</span>
+              </div>
+
+              <div class="flow-branch-row">
+                <div class="flow-branch flow-no">
+                  <span><i class="fa-solid fa-rotate-left"></i> Belum tuntas</span>
+                  <p>Ulangi eksplorasi dan simulasi pada langkah 4–5, lalu kerjakan kuis kembali.</p>
+                </div>
+                <div class="flow-branch flow-yes">
+                  <span><i class="fa-solid fa-arrow-down"></i> Sudah tuntas</span>
+                  <p>Lanjut ke peninjauan hasil dan tindak lanjut bersama guru.</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flow-node flow-final">
+                <span class="flow-num">7</span>
+                <div class="flow-body">
+                  <h5><i class="fa-solid fa-chart-line"></i> Tinjau Hasil dan Tindak Lanjut</h5>
+                  <p>Guru melihat ringkasan aktivitas pada dashboard, memberikan umpan balik, lalu menentukan penguatan atau pendampingan berikutnya.</p>
+                </div>
+              </div>
+            </div>
+            <p class="flow-note"><i class="fa-solid fa-circle-info"></i> Alur ini fleksibel. Guru dapat menggunakan aplikasi untuk demonstrasi di kelas, sedangkan siswa dapat mengulang simulasi secara mandiri sebelum praktik nyata.</p>
+
+            <h5 class="ki-sub">B. Tata Cara Penggunaan untuk Guru</h5>
+            <div class="analysis-grid two" style="margin-top:14px;">
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-chalkboard-user"></i> Persiapan</h4>
+                <ol class="misi-list">
+                  <li>Masuk menggunakan akun guru dan pilih kelas yang akan diajar.</li>
+                  <li>Pastikan perangkat terhubung internet dan browser sudah diperbarui.</li>
+                  <li>Siapkan proyektor atau layar agar simulasi dapat diamati bersama.</li>
+                  <li>Tentukan modul serta tujuan pembelajaran yang ingin dicapai.</li>
+                </ol>
+              </div>
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-clipboard-check"></i> Pelaksanaan</h4>
+                <ol class="misi-list">
+                  <li>Jelaskan tujuan, langkah kerja, dan aturan K3/LOTO sebelum memulai.</li>
+                  <li>Demonstrasikan cara membuka alat 3D dan menjalankan simulasi.</li>
+                  <li>Dampingi murid saat eksplorasi dan berikan pertanyaan pemantik.</li>
+                  <li>Minta murid menyelesaikan kuis dan refleksi secara mandiri.</li>
+                </ol>
+              </div>
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-chart-line"></i> Evaluasi</h4>
+                <ol class="misi-list">
+                  <li>Buka dashboard untuk melihat aktivitas dan hasil kuis murid.</li>
+                  <li>Identifikasi materi atau langkah kerja yang masih sering keliru.</li>
+                  <li>Berikan umpan balik dan jadwalkan penguatan bagi murid yang membutuhkan.</li>
+                  <li>Hubungkan temuan di aplikasi dengan praktik nyata di bengkel.</li>
+                </ol>
+              </div>
+              <div class="analysis-item">
+                <h4><i class="fa-solid fa-triangle-exclamation"></i> Catatan Penting</h4>
+                <ol class="misi-list">
+                  <li>Aplikasi adalah pendamping, bukan pengganti praktik menggunakan alat nyata.</li>
+                  <li>Tetap terapkan prosedur keselamatan dan pengawasan guru di bengkel.</li>
+                  <li>Gunakan akun resmi sekolah dan jangan membagikan kata sandi.</li>
+                  <li>Catat kendala teknis untuk perbaikan media berikutnya.</li>
+                </ol>
+              </div>
+            </div>
+
+            <h5 class="ki-sub">C. Tata Cara Penggunaan untuk Siswa</h5>
+            <ol class="usage-steps">
+              <li>Buka tautan aplikasi, lalu masuk menggunakan akun siswa yang diberikan guru.</li>
+              <li>Pilih modul sesuai arahan dan baca tujuan pembelajaran dengan saksama.</li>
+              <li>Pelajari prosedur K3/LOTO sebelum menyentuh alat atau menjalankan simulasi.</li>
+              <li>Eksplorasi alat 3D dan catat nama, fungsi, serta bagian penting yang ditemukan.</li>
+              <li>Ikuti langkah simulasi praktikum secara berurutan dan amati perubahan yang terjadi.</li>
+              <li>Kerjakan kuis tanpa melihat catatan agar hasilnya mencerminkan pemahaman awal.</li>
+              <li>Tulis refleksi tentang pembelajaran, kesulitan, dan langkah perbaikan yang akan dilakukan.</li>
+              <li>Diskusikan hasil dengan guru atau teman, lalu terapkan pemahaman tersebut saat praktik nyata.</li>
+            </ol>
+
+            <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a class="btn btn-primary" href="https://edukelistrikan.vercel.app" target="_blank" rel="noopener"><i class="fa-solid fa-play"></i> Mulai Gunakan EduKelistrikan</a>
+              <a class="btn btn-outline" href="#karya-inovatif" data-scroll="karya-inovatif"><i class="fa-solid fa-arrow-up"></i> Kembali ke Identitas Karya</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 class="block-title"><i class="fa-solid fa-flag-checkered"></i> 8. Kesimpulan</h4>
+            <p>EduKelistrikan merupakan media pembelajaran interaktif yang dikembangkan untuk membantu murid memahami peralatan, rangkaian kendali motor, dan keselamatan kerja melalui bengkel virtual. Media ini menjawab keterbatasan alat dan waktu praktik, sekaligus memberi ruang belajar yang lebih aman dan dapat diulang.</p>
+            <p>Karya ini masih perlu dikembangkan, terutama pada akurasi simulasi, kualitas asesmen, dan pengukuran dampak terhadap hasil belajar. Dengan penyempurnaan dan penggunaan yang terarah, EduKelistrikan diharapkan menjadi pendamping praktik yang relevan, aman, dan bermanfaat bagi murid Teknik Kelistrikan.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- ============ REFLEKSI SEMESTER 1 ============ -->
+    <section id="refleksi-s1" class="page section">
+      <div class="page-banner gradient-ctg" data-aos="fade-up">
+        <h1>REFLEKSI SEMESTER 1</h1>
+        <p>Refleksi atas kegiatan dan pembelajaran pada semester pertama PPG.</p>
+      </div>
+
+      <div class="section-heading" data-aos="fade-up">
+        <span class="eyebrow-note">lembar refleksi</span>
+        <h2><i class="fa-solid fa-book-open"></i> Refleksi Mata Kuliah Semester 1</h2>
+        <p style="color:var(--text-soft);font-size:.92rem;margin-top:6px;">Model refleksi 4C (Connection, Challenge, Concept, Change) pada setiap mata kuliah.</p>
+      </div>
+
+      <div class="mk-sg" data-aos="fade-up">
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+          <h3>Filosofi Pendidikan dan Pendidikan Nilai</h3>
+          <p>Landasan filosofis pendidikan serta penanaman nilai dalam praktik mengajar kelistrikan.</p>
+          <button class="btn btn-primary lej-more" data-mk="filosofi"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Pemahaman Peserta Didik dan Pembelajarannya</h3>
+          <p>Memahami karakteristik, kebutuhan, dan potensi murid untuk pembelajaran yang berpihak pada murid.</p>
+          <button class="btn btn-primary lej-more" data-mk="pemahaman"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Pembelajaran Mendalam dan Asesmen Dasar</h3>
+          <p>Merancang pembelajaran bermakna serta asesmen yang mendukung pemahaman murid.</p>
+          <button class="btn btn-primary lej-more" data-mk="pembelajaran-dasar"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-pencil-ruler"></i></div>
+          <h3>Design Thinking</h3>
+          <p>Menyelesaikan masalah pembelajaran secara kreatif dan berpusat pada kebutuhan murid.</p>
+          <button class="btn btn-primary lej-more" data-mk="design-thinking"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Pola Pikir Bertumbuh (Growth Mindset)</h3>
+          <p>Mengembangkan pola pikir berkembang dalam proses belajar dan praktik mengajar.</p>
+          <button class="btn btn-primary lej-more" data-mk="growth"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <h3>Praktik Pengalaman Lapangan Terbimbing</h3>
+          <p>Praktik mengajar terbimbing dengan supervisi guru pamong dan dosen pembimbing.</p>
+          <button class="btn btn-primary lej-more" data-mk="ppl-terbimbing"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REFLEKSI SEMESTER 2 ============ -->
+    <section id="refleksi-s2" class="page section">
+      <div class="page-banner gradient-sage" data-aos="fade-up">
+        <h1>REFLEKSI SEMESTER 2</h1>
+        <p>Refleksi atas kegiatan dan pembelajaran pada semester kedua PPG.</p>
+      </div>
+
+      <div class="section-heading" data-aos="fade-up">
+        <span class="eyebrow-note">lembar refleksi</span>
+        <h2><i class="fa-solid fa-book-open"></i> Refleksi Mata Kuliah Semester 2</h2>
+        <p style="color:var(--text-soft);font-size:.92rem;margin-top:6px;">Model refleksi 4C (Connection, Challenge, Concept, Change) pada setiap mata kuliah.</p>
+      </div>
+
+      <div class="mk-sg" data-aos="fade-up">
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3>Pembelajaran Sosial dan Emosional</h3>
+          <p>Membangun lingkungan belajar yang aman, inklusif, dan berpihak pada murid.</p>
+          <button class="btn btn-primary lej-more" data-mk="pse"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Pembelajaran Mendalam dan Asesmen Lanjut</h3>
+          <p>Mendalami asesmen berkelanjutan dan tindak lanjut berbasis data.</p>
+          <button class="btn btn-primary lej-more" data-mk="asesmen-lanjut"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-flag"></i></div>
+          <h3>Proyek Kepemimpinan</h3>
+          <p>Merancang dan melaksanakan proyek kepemimpinan yang berdampak di lingkungan sekolah.</p>
+          <button class="btn btn-primary lej-more" data-mk="kepemimpinan"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Edupreneurship</h3>
+          <p>Menumbuhkan kreativitas, kemandirian, dan inovasi bernilai dalam pendidikan.</p>
+          <button class="btn btn-primary lej-more" data-mk="edupreneurship"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+        <div class="mk-card">
+          <div class="mk-card-icon"><i class="fa-solid fa-door-open"></i></div>
+          <h3>Praktik Pengalaman Lapangan Mandiri</h3>
+          <p>Melaksanakan pembelajaran secara mandiri dari perencanaan hingga evaluasi.</p>
+          <button class="btn btn-primary lej-more" data-mk="ppl-mandiri"><i class="fa-solid fa-eye"></i> Lihat Refleksi</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REFLEKSI PPG ============ -->
+    <section id="refleksi" class="page section">
+      <div class="page-banner gradient-sage" data-aos="fade-up">
+        <h1>Refleksi PPG</h1>
+        <p>Refleksi mendalam atas pengalaman dan pembelajaran selama menjalani PPG.</p>
+      </div>
+
+      <div class="card ppg-card" data-aos="fade-up">
+        <span class="eyebrow-note">lembar kerja 3</span>
+        <h2 class="ppg-title"><i class="fa-solid fa-book-open-reader"></i> Refleksi Pengalaman Belajar Selama Mengikuti PPG</h2>
+        <p class="ppg-sub">Calon Guru Gelombang I, Bidang Studi Teknik Kelistrikan, Universitas Negeri Surabaya</p>
+
+        <div class="ppg-q"><i class="fa-solid fa-circle-question"></i> Bagaimana seharusnya pendidikan di Indonesia?</div>
+        <blockquote class="ppg-excerpt">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Setelah mengikuti rangkaian refleksi pengalaman belajar sejak semester 1 hingga semester 2, saya semakin memahami bahwa pendidikan di Indonesia seharusnya merata, bermutu, dan berpihak pada kebutuhan setiap murid. Setiap anak memiliki hak yang sama untuk memperoleh pendidikan yang baik, termasuk akses terhadap pembelajaran vokasi yang aman, relevan, dan dekat dengan dunia kerja ...</p>
+        </blockquote>
+
+        <div class="ppg-actions">
+          <button class="btn btn-primary lej-more" data-mk="lk3"><i class="fa-solid fa-book-open"></i> Baca Ringkasan</button>
+          <span class="ppg-file"><i class="fa-solid fa-file-pdf"></i> LK 3 Refleksi Keseluruhan</span>
+        </div>
+      </div>
+
+      <div class="card ppg-card" data-aos="fade-up">
+        <span class="eyebrow-note">rencana tindak lanjut</span>
+        <h2 class="ppg-title"><i class="fa-solid fa-route"></i> Rencana Tindak Lanjut (RTL)</h2>
+        <p class="ppg-sub">Pengembangan Diri sebagai Guru Profesional melalui Karya Inovatif EduKelistrikan</p>
+
+        <h4 class="rtl-q"><span class="rtl-no">1</span> Apa saja tiga hal penting yang akan Anda lakukan ketika memulai karier sebagai guru?</h4>
+        <p class="rtl-p">Tiga hal penting yang akan saya lakukan ketika memulai karier sebagai guru adalah sebagai berikut.</p>
+
+        <div class="rtl-item">
+          <h5><span>a</span> Meningkatkan kompetensi secara berkelanjutan melalui pengembangan inovasi pembelajaran.</h5>
+          <p>Saya akan terus mengikuti pelatihan, mempelajari perkembangan teknologi kelistrikan, dan mengembangkan media pembelajaran seperti EduKelistrikan agar pembelajaran tetap relevan dengan kebutuhan industri.</p>
+        </div>
+
+        <button class="btn btn-primary mgj-toggle" data-target="rtlMore" type="button" style="margin-top:20px;"><i class="fa-solid fa-chevron-down"></i> Baca Selanjutnya</button>
+
+        <div id="rtlMore" class="mgj-more" style="display:none;">
+          <div class="rtl-item">
+            <h5><span>b</span> Memahami profil dan kebutuhan belajar peserta didik.</h5>
+            <p>Saya akan melakukan asesmen awal, observasi, dan komunikasi untuk mengenali kesiapan, minat, serta kebutuhan murid. Hasilnya akan menjadi dasar dalam memilih strategi, media, dan tingkat pendampingan yang sesuai, termasuk pemanfaatan simulasi bagi murid yang membutuhkan gambaran konkret.</p>
+          </div>
+          <div class="rtl-item">
+            <h5><span>c</span> Melaksanakan pembelajaran dan asesmen yang bermakna serta berpihak pada murid.</h5>
+            <p>Saya akan merancang pembelajaran yang menggabungkan teori, demonstrasi, praktik aman, dan refleksi. Asesmen tidak hanya menilai hasil akhir, tetapi juga proses, keselamatan kerja, dan kemampuan murid menjelaskan alasan di balik setiap langkah.</p>
+          </div>
+
+          <h4 class="rtl-q" style="margin-top:28px;"><span class="rtl-no">2</span> Sebagai guru profesional, saya akan melakukan:</h4>
+          <p class="rtl-p">Sebagai guru profesional, saya akan terus mengembangkan kompetensi pedagogik dan profesional, memahami karakteristik murid, serta merancang pembelajaran yang sesuai dengan tujuan dan konteks dunia kerja. Saya akan memanfaatkan teknologi secara terarah, bukan sebagai pengganti praktik nyata, tetapi sebagai pendamping yang memperkuat pemahaman dan kesiapan murid.</p>
+          <p class="rtl-p" style="margin-top:12px;">Saya juga akan membangun budaya keselamatan kerja, membuka ruang umpan balik, dan melakukan refleksi berkala terhadap pembelajaran yang saya jalankan. Setiap pengalaman mengajar akan saya jadikan dasar untuk memperbaiki kualitas pembelajaran dan memberikan kesempatan belajar yang lebih baik bagi setiap murid.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOKUMENTASI ============ -->
+    <section id="dokumentasi" class="page section">
+      <div class="page-banner gradient" data-aos="fade-up">
+        <h1>Dokumentasi</h1>
+        <p>Dokumentasi kegiatan selama PPG, dari pembelajaran di kelas hingga praktik di bengkel.</p>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <p class="block-text">Bagian ini menampilkan dokumentasi kegiatan selama program PPG, mulai dari pembelajaran teori, praktik kelistrikan, penerapan K3, hingga presentasi karya inovasi.</p>
+      </div>
+
+      <div class="card dok-card" data-aos="fade-up">
+        <h3><i class="fa-solid fa-folder-open"></i> Dokumen Lembar Kerja</h3>
+        <p class="block-text">Ringkasan lembar kerja PPG. Silakan buka ringkasannya untuk melihat isi utama setiap dokumen.</p>
+        <div class="dok-grid">
+          <article class="dok-doc">
+            <span class="dok-no">1</span>
+            <span class="eyebrow-note">lembar kerja 1</span>
+            <h4 class="dok-title"><i class="fa-solid fa-id-card"></i> LK 1 Identifikasi Diri</h4>
+            <blockquote class="ppg-excerpt"><i class="fa-solid fa-quote-left"></i><p>Mewujudkan pendidikan vokasi yang merata dan bermutu, dengan guru kelistrikan yang kompeten, peduli keselamatan, dan mampu menumbuhkan murid yang mandiri serta siap kerja ...</p></blockquote>
+            <div class="ppg-actions">
+              <button class="btn btn-primary lej-more" data-mk="lk1"><i class="fa-solid fa-book-open"></i> Baca Ringkasan</button>
+              <span class="ppg-file"><i class="fa-solid fa-file-lines"></i> LK 1</span>
+            </div>
+          </article>
+
+          <article class="dok-doc">
+            <span class="dok-no">2</span>
+            <span class="eyebrow-note">lembar kerja 2 semester 1</span>
+            <h4 class="dok-title"><i class="fa-solid fa-layer-group"></i> LK 2 Refleksi Mata Kuliah Semester 1</h4>
+            <blockquote class="ppg-excerpt"><i class="fa-solid fa-quote-left"></i><p>Melalui mata kuliah Pemahaman Peserta Didik, saya belajar bahwa kesiapan dan gaya belajar murid berbeda. Perbedaan ini menuntut guru merancang aktivitas yang lebih fleksibel, termasuk dalam pembelajaran kelistrikan ...</p></blockquote>
+            <div class="ppg-actions">
+              <button class="btn btn-primary lej-more" data-mk="lk2s1"><i class="fa-solid fa-book-open"></i> Baca Ringkasan</button>
+              <span class="ppg-file"><i class="fa-solid fa-file-lines"></i> LK 2 Semester 1</span>
+            </div>
+          </article>
+
+          <article class="dok-doc">
+            <span class="dok-no">3</span>
+            <span class="eyebrow-note">lembar kerja 2 semester 2</span>
+            <h4 class="dok-title"><i class="fa-solid fa-heart-pulse"></i> LK 2 Refleksi Mata Kuliah Semester 2</h4>
+            <blockquote class="ppg-excerpt"><i class="fa-solid fa-quote-left"></i><p>Pembelajaran Sosial Emosional membantu saya mengelola kelas yang beragam dan membangun hubungan yang aman. Saya belajar bahwa keselamatan kerja juga berkaitan dengan rasa percaya dan tanggung jawab ...</p></blockquote>
+            <div class="ppg-actions">
+              <button class="btn btn-primary lej-more" data-mk="lk2s2"><i class="fa-solid fa-book-open"></i> Baca Ringkasan</button>
+              <span class="ppg-file"><i class="fa-solid fa-file-lines"></i> LK 2 Semester 2</span>
+            </div>
+          </article>
+
+          <article class="dok-doc">
+            <span class="dok-no">4</span>
+            <span class="eyebrow-note">lembar kerja 4</span>
+            <h4 class="dok-title"><i class="fa-solid fa-cube"></i> LK 4 Desain Karya Inovatif</h4>
+            <blockquote class="ppg-excerpt"><i class="fa-solid fa-quote-left"></i><p>EduKelistrikan dikembangkan sebagai bengkel virtual yang menghadirkan alat 3D, simulasi praktikum kendali motor, K3/LOTO, asesmen, dan refleksi untuk mendukung pembelajaran TITL ...</p></blockquote>
+            <div class="ppg-actions">
+              <button class="btn btn-primary lej-more" data-mk="lk4"><i class="fa-solid fa-book-open"></i> Baca Ringkasan</button>
+              <span class="ppg-file"><i class="fa-solid fa-file-lines"></i> LK 4</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="card gallery-card" data-aos="fade-up">
+        <h3><i class="fa-solid fa-photo-film"></i> Galeri Foto</h3>
+        <div class="gallery-grid">
+          <a class="gallery-item" href="assets/galeri/dok-01.svg" data-lightbox="galeri" data-alt="Praktikum panel kendali motor">
+            <img src="assets/galeri/dok-01.svg" alt="Praktikum panel kendali motor" loading="lazy">
+          </a>
+          <a class="gallery-item" href="assets/galeri/dok-02.svg" data-lightbox="galeri" data-alt="Pengukuran tegangan dan kontinuitas">
+            <img src="assets/galeri/dok-02.svg" alt="Pengukuran tegangan dan kontinuitas" loading="lazy">
+          </a>
+          <a class="gallery-item" href="assets/galeri/dok-03.svg" data-lightbox="galeri" data-alt="EduKelistrikan bengkel virtual">
+            <img src="assets/galeri/dok-03.svg" alt="EduKelistrikan bengkel virtual" loading="lazy">
+          </a>
+          <a class="gallery-item" href="assets/galeri/dok-04.svg" data-lightbox="galeri" data-alt="Diskusi dan kerja kelompok">
+            <img src="assets/galeri/dok-04.svg" alt="Diskusi dan kerja kelompok" loading="lazy">
+          </a>
+          <a class="gallery-item" href="assets/galeri/dok-05.svg" data-lightbox="galeri" data-alt="Penerapan K3 dan LOTO">
+            <img src="assets/galeri/dok-05.svg" alt="Penerapan K3 dan LOTO" loading="lazy">
+          </a>
+          <a class="gallery-item" href="assets/galeri/dok-06.svg" data-lightbox="galeri" data-alt="Presentasi karya inovasi">
+            <img src="assets/galeri/dok-06.svg" alt="Presentasi karya inovasi" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p style="color:var(--text-soft);font-size:.8rem;line-height:2;margin-top:10px;">
+      <a href="mailto:abdul.fitrah.mine@email.com" style="color:inherit;text-decoration:none;"><i class="fa-solid fa-envelope"></i> abdul.fitrah.mine@email.com</a><br>
+      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;"><i class="fa-brands fa-whatsapp"></i> WA: 0812 3456 7890</a> &nbsp;&bull;&nbsp;
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Surabaya" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;"><i class="fa-solid fa-location-dot"></i> Surabaya, Jawa Timur</a>
+    </p>
+    <div class="marquee"><span>&ldquo;Guru kelistrikan yang baik menyalakan rasa ingin tahu, bukan hanya menyalakan panel.&rdquo;</span></div>
+  </footer>
+</div>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+<div class="fab-group">
+  <button class="fab fab-help" id="fabHelp" title="Refleksi PPG">
+    <i class="fa-solid fa-comment-dots"></i>
+  </button>
+  <button class="fab fab-top" id="fabTop" title="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</div>
+
+<!-- ================= MODAL ================= -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box lej-modal">
+    <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-icon"><i class="fa-solid fa-book-open"></i></div>
+    <h3 class="modal-title" id="modalTitle"></h3>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
