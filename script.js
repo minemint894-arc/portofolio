@@ -1,5 +1,5 @@
 /* ============================================================
-   E-Portofolio Abdul Fitrah Mine — Teknik Kelistrikan
+   E-Portofolio Abdul Fitrah Mine — Teknik Ketenagalistrikan
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
